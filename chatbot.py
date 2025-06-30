@@ -10,3 +10,14 @@ def send(message):
             {"role": "user", "content": message}
         ]
     )
+    
+    return answer['choices'][0]['message']
+
+
+while True:
+    texto = input("Escreva aqui sua mensagem:")
+
+    if texto == "sair":
+        break
+
+print(send("Em que ano Einstein morreu?"))
