@@ -13,7 +13,6 @@ def send(message):
     
     return answer['choices'][0]['message']
 
-
 while True:
     texto = input("Escreva aqui sua mensagem:")
 
